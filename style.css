@@ -12,7 +12,7 @@ body{
   justify-content: center;
   padding: 0 10px;
   min-height: 100vh;
-  background: #5372F0;
+  background-image: linear-gradient(-45deg,#5372F0, #e2802f);
 }
 .container{
   max-width: 690px;
@@ -122,7 +122,7 @@ body{
   margin-top: 20px;
   font-size: 17px;
   border-radius: 5px;
-  background: #5372F0;
+  background-image: linear-gradient(45deg,#5372F0, #e2802f)
 }
 
 @media (max-width: 660px){
