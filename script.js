@@ -56,15 +56,15 @@ icons.forEach(icon => {
                 navigator.clipboard.writeText(toText.value);
             }
         } else {
-            let utterance;
+            let voz;
             if(target.id == "from") {
-                utterance = new SpeechSynthesisUtterance(fromText.value);
-                utterance.lang = selectTag[0].value;
+                voz = new SpeechSynthesisUtterance(fromText.value);
+                voz.lang = selectTag[0].value;
             } else {
-                utterance = new SpeechSynthesisUtterance(toText.value);
-                utterance.lang = selectTag[1].value;
+                voz = new SpeechSynthesisUtterance(toText.value);
+                voz.lang = selectTag[1].value;
             }
-            speechSynthesis.speak(utterance);
+            speechSynthesis.speak(voz);
         }
     });
 });
